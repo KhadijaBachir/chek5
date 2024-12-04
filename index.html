@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Navigation -->
+  <nav class="border-gray-200 bg-gray-900 text-gray-200">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <span class="text-3xl font-semibold whitespace-nowrap">Khadija bint Bachir</span>
+      <button id="menu-button" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center md:hidden">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div id="navbar-default" class="hidden md:flex md:w-auto">
+        <ul class="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-7">
+          <li><a href="#ancre1" class="font-bold">Accueil</a></li>
+          <li><a href="#ancre2" class="font-bold">À propos de moi</a></li>
+          <li><a href="#ancre3" class="font-bold">Compétences</a></li>
+          <li><a href="#ancre4" class="font-bold">Motivations</a></li>
+          <li><a href="#ancre5" class="font-bold">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Accueil -->
+  <section class="secto1 py-20 bg-gradient-to-b from-blue-500 to-pink-500" id="ancre1">
+    <div class="flex justify-center space-x-2">
+      <div>
+        DEVELOPPEUSE WEB
+      </div>
+    </div>
+    <div class="flex justify-center mt-8 space-x-4">
+      <i class="fa-brands fa-facebook-f text-white text-4xl"></i>
+      <i class="fa-brands fa-linkedin-in text-white text-4xl"></i>
+      <i class="fa-brands fa-instagram text-white text-4xl"></i>
+      <i class="fa-brands fa-twitter text-white text-4xl"></i>
+      <i class="fa-brands fa-tiktok text-white text-4xl"></i>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section class="bg-gray-300 py-20" id="ancre2">
+    <h1 class="text-4xl font-bold text-center" data-aos="zoom-in-down">À propos de moi</h1>
+    <p class="text-center max-w-4xl mx-auto mt-8 leading-relaxed">
+      Je m'appelle Khadija, informaticienne et marketeuse digitale passionnée avec 2 ans d'expérience 
+      dans le développement web, l'infographie, et la gestion de projets numériques.
+      J'aime relever les défis techniques et explorer de nouvelles technologies pour rester à la pointe des tendances actuelles.
+    </p>
+  </section>
+
+  <!-- Compétences -->
+  <section class="bg-gray-300 py-20" id="ancre3">
+    <h1 class="text-4xl font-bold text-center" data-aos="zoom-in-down">Mes Compétences</h1>
+    <div class="container mx-auto px-4 mt-8 space-y-6">
+      <div class="w-full md:w-1/2 bg-gray-200 rounded-full mx-auto">
+        <div class="bg-orange-600 text-center p-1 rounded-full" style="width: 90%">HTML 90%</div>
+      </div>
+      <div class="w-full md:w-1/2 bg-gray-200 rounded-full mx-auto">
+        <div class="bg-blue-800 text-center p-1 rounded-full" style="width: 85%">CSS 85%</div>
+      </div>
+      <div class="w-full md:w-1/2 bg-gray-200 rounded-full mx-auto">
+        <div class="bg-purple-600 text-center p-1 rounded-full" style="width: 80%">Tailwind 80%</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Motivations -->
+  <section class="bg-gray-200 py-20" id="ancre4">
+    <h1 class="text-3xl font-bold text-center" data-aos="zoom-in-down">Motivations</h1>
+    <div class="flex flex-wrap justify-center mt-8 space-y-4 sm:space-y-0 sm:space-x-8">
+      <div class="bg-white p-6 rounded shadow text-center">“La persévérance est la clé de la réussite.”</div>
+      <div class="bg-white p-6 rounded shadow text-center">“Chaque jour est une nouvelle opportunité.”</div>
+      <div class="bg-white p-6 rounded shadow text-center">“Le travail acharné surmonte le talent.”</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-20" id="ancre5">
+    <h1 class="text-3xl font-bold text-center" data-aos="zoom-in-down">Contactez-moi</h1>
+    <form class="max-w-lg mx-auto mt-8">
+      <input type="text" placeholder="Nom" class="w-full p-4 mb-4 border rounded">
+      <input type="email" placeholder="Email" class="w-full p-4 mb-4 border rounded">
+      <textarea placeholder="Votre message" class="w-full p-4 mb-4 border rounded h-32"></textarea>
+      <button class="w-full p-4 bg-blue-500 text-white rounded">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 p-6 text-center text-gray-400">
+    © 2024 Khadija. Tous droits réservés.
+  </footer>
+
+  <script>
+    AOS.init();
+    const menuButton = document.getElementById('menu-button');
+    const navbar = document.getElementById('navbar-default');
+    menuButton.addEventListener('click', () => {
+      navbar.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
